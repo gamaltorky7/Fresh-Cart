@@ -19,7 +19,7 @@ export default function ProductCard({item}:{item:product}) {
 
 
   return (
-    <Card className="relative border bg-gray-300 group dark:bg-gray-800 hover:scale-102 transition-transform duration-300">
+    <Card className="p-3 relative border bg-gray-300 group dark:bg-gray-800 hover:scale-102 transition-transform duration-300">
       <AddToWishlist id={_id}/>
 
          <Link href={"/products/"+_id}>
@@ -33,7 +33,7 @@ export default function ProductCard({item}:{item:product}) {
         />
         </CardHeader>
         <CardContent>
-          <CardTitle className="text-main">{name}</CardTitle>
+          <CardTitle className="text-main mt-2">{name}</CardTitle>
           <CardTitle className="py-2 dark:text-gray-400">{title.split(' ').slice(0,2).join(' ')}</CardTitle>
 
           <div className="flex justify-between items-center my-1">
@@ -41,7 +41,7 @@ export default function ProductCard({item}:{item:product}) {
             <span className="dark:text-gray-400"><i className="fa-solid fa-star rating-color"></i> {ratingsAverage}</span>
           </div>
         </CardContent>
-    </Link>
+      </Link>
         <CardFooter>
           <AddCartBtn  id={_id}/>
         </CardFooter>

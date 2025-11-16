@@ -33,7 +33,7 @@ export default function Wishlist() {
       toast.success(data.message , {position:'top-center'})
       getWishlistData()
       const sum = data.count;
-    setWishCount(sum);
+      setWishCount(sum);
     }else{
       toast.error('Some thing wrong happened', {position:'top-center'})
     }
@@ -42,7 +42,7 @@ export default function Wishlist() {
 
  
   return (
-    <div>
+    <div className='min-h-screen'>
       {
         wishloading ? 
         <div className='flex justify-center items-center fixed top-0 left-0 w-full h-full bg-gray-300/50 backdrop-blur-sm z-50'>

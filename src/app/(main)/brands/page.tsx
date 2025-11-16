@@ -36,14 +36,14 @@ const BrandList:data[] = data.data
                   />
                   </CardHeader>
                   <CardContent>
-                    <div className="flex justify-between items-center my-3">
-                      <span className='text-2xl font-bold text-gray-950'>{name}</span>
-                      <span className='text-sm font-bold text-white bg-main p-1 rounded-xl'> {slug}</span>
+                    <div className="flex justify-between items-center my-3 w-full">
+                      <span className='text-lg font-bold text-gray-950'>{name}</span>
+                      <span className='text-sm font-bold text-white bg-main p-1 rounded-xl text-center'> {slug}</span>
                     </div>
                   </CardContent>
               
                   
-    </Card>
+          </Card>
         })
       }
     </div>
