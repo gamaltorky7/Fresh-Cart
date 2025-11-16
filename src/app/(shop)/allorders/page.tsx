@@ -25,7 +25,8 @@ export default function Allorders() {
     const data: Ordersdata = await getUserOrders();
     console.log(data);
     if (!data) {
-      toast.error("some thing went wrong", { position: "top-center" });
+      // toast.error("some thing went wrong", { position: "top-center" });
+      
     } else toast.success("your orders is ready", { position: "top-center" });
     setdata(data);
     setorderloading(false);
