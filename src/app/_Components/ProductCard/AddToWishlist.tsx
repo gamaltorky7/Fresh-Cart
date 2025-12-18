@@ -37,7 +37,7 @@ export default function AddToWishlist({id}:{id:string}) {
     }
 
   useEffect(() => {
-   if(id){
+   if(data?.length != 0){
     getdata();
    }
   }, [id]);
