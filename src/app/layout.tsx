@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Encode_Sans } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "@fortawesome/fontawesome-free/css/all.css";
@@ -52,6 +53,7 @@ export default function RootLayout({
             </WishProvider>
           </UserProvider>
         </ThemeProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
