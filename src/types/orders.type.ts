@@ -1,4 +1,4 @@
-import { JSX } from "react";
+import { JSX, ReactNode } from "react";
 
 export interface Ordersdata {
     map(arg0: (gamal: Ordersdata) => JSX.Element): import("react").ReactNode;
@@ -19,6 +19,9 @@ export interface Ordersdata {
 }
 
 export interface CartItem {
+    id: ReactNode;
+    totalOrderPrice: ReactNode;
+    cartItems: any;
     count:   number;
     _id:     string;
     product: Product;

@@ -40,7 +40,7 @@ export default function Allorders() {
         </div>
       ) : (
         <>
-          {data?.cartItems?.length > 0 ? (
+          {data ? (
             <>
               <div className="container max-w-6xl mx-auto my-5 ">
                 <h1 className="text-3xl font-bold my-5 ">Your Orders </h1>
