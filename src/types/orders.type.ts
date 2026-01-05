@@ -21,7 +21,7 @@ export interface Ordersdata {
 export interface CartItem {
     id: ReactNode;
     totalOrderPrice: ReactNode;
-    cartItems: any;
+    cartItems: Array<CartItem>;
     count:   number;
     _id:     string;
     product: Product;
